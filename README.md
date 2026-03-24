@@ -13,10 +13,15 @@ Dark-themed, single-page A4 cheat sheets generated with Python + ReportLab.
 ## Usage
 
 ```bash
+# Build all cheatsheets
 ./build.sh
+
+# Build specific ones
+./build.sh tmux
+./build.sh tmux vim
 ```
 
-This builds a Docker image with `reportlab` and generates both PDFs into the repo root. No host dependencies needed beyond Docker.
+Requires Docker. The build script creates a lightweight image with `reportlab` and outputs PDFs to the repo root.
 
 ## Adding a new cheatsheet
 
